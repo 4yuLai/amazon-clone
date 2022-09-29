@@ -61,9 +61,6 @@ function Payment() {
         }).then(async ({paymentIntent}) => {
             // push into database
             // Add a new document in collection "cities"
-            console.log(db);
-            console.log(user.uid);
-            console.log(paymentIntent);
             await setDoc(doc(db, 'users', user?.uid, 'orders' , paymentIntent.id), {
                 basket: basket,
                 amount: paymentIntent.amount,
@@ -157,7 +154,7 @@ function Payment() {
                                     thousandSeparator={true}
                                     prefix={'€'}
                                 />
-                                <button disabled={processing || disabled || succeeded}>
+                                <button className='payment__button' disabled={processing || disabled || succeeded}>
                                     <span>{processing ? <p>Processing</p> : "Buy Now"}</span>
                                 </button>
                             </div>
