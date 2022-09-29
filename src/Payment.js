@@ -10,6 +10,11 @@ import { useStateValue } from "./StateProvider";
 import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
 
 import axios from './axios';
+import { db } from './firebase';
+
+import { doc, setDoc } from "firebase/firestore"; 
+
+
 
 
 function Payment() {
@@ -53,7 +58,18 @@ function Payment() {
             payment_method: {
                 card: elements.getElement(CardElement)
             }
-        }).then(({paymentIntent}) => {
+        }).then(async ({paymentIntent}) => {
+            // push into database
+            // Add a new document in collection "cities"
+            console.log(db);
+            console.log(user.uid);
+            console.log(paymentIntent);
+            await setDoc(doc(db, 'users', user?.uid, 'orders' , paymentIntent.id), {
+                basket: basket,
+                amount: paymentIntent.amount,
+                created: paymentIntent.created
+            });
+
             // paymentIntent = payment confirmation
             setError(null);
             setProcessing(false);
