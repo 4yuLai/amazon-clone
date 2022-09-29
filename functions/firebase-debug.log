@@ -1,63 +1,61 @@
-[debug] [2022-09-27T16:20:33.002Z] ----------------------------------------------------------------------
-[debug] [2022-09-27T16:20:33.003Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
-[debug] [2022-09-27T16:20:33.003Z] CLI Version:   10.9.2
-[debug] [2022-09-27T16:20:33.003Z] Platform:      darwin
-[debug] [2022-09-27T16:20:33.003Z] Node Version:  v16.16.0
-[debug] [2022-09-27T16:20:33.004Z] Time:          Tue Sep 27 2022 17:20:33 GMT+0100 (Irish Standard Time)
-[debug] [2022-09-27T16:20:33.004Z] ----------------------------------------------------------------------
+[debug] [2022-09-29T14:19:11.500Z] ----------------------------------------------------------------------
+[debug] [2022-09-29T14:19:11.500Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2022-09-29T14:19:11.501Z] CLI Version:   10.9.2
+[debug] [2022-09-29T14:19:11.501Z] Platform:      darwin
+[debug] [2022-09-29T14:19:11.501Z] Node Version:  v16.16.0
+[debug] [2022-09-29T14:19:11.501Z] Time:          Thu Sep 29 2022 15:19:11 GMT+0100 (Irish Standard Time)
+[debug] [2022-09-29T14:19:11.502Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-09-27T16:20:33.030Z] Field ".emulators.hosting.port" in "firebase.json" is possibly invalid: should be number
-[debug] [2022-09-27T16:20:33.032Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-09-27T16:20:33.032Z] > authorizing via signed-in user (siyu.lai.valerie@gmail.com)
-[debug] [2022-09-27T16:20:33.755Z] java version "1.8.0_341"
-Java(TM) SE Runtime Environment (build 1.8.0_341-b10)
+[debug] [2022-09-29T14:19:11.528Z] Field ".emulators.hosting.port" in "firebase.json" is possibly invalid: should be number
+[debug] [2022-09-29T14:19:11.530Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-09-29T14:19:11.530Z] > authorizing via signed-in user (siyu.lai.valerie@gmail.com)
+[debug] [2022-09-29T14:19:11.616Z] java version "1.8.0_341"
+
+[debug] [2022-09-29T14:19:11.616Z] Java(TM) SE Runtime Environment (build 1.8.0_341-b10)
 Java HotSpot(TM) 64-Bit Server VM (build 25.341-b10, mixed mode)
 
-[debug] [2022-09-27T16:20:33.757Z] Parsed Java major version: 1
+[debug] [2022-09-29T14:19:11.619Z] Parsed Java major version: 1
 [warn] ⚠  emulators: Support for Java version <= 10 will be dropped soon in firebase-tools@11. Please upgrade to Java version 11 or above to continue using the emulators. 
 [info] i  emulators: Starting emulators: functions, database, hosting {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions, database, hosting"}}
-[debug] [2022-09-27T16:20:33.773Z] [hub] writing locator at /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/hub-clone-7756a.json
+[debug] [2022-09-29T14:19:11.634Z] [hub] writing locator at /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/hub-clone-7756a.json
 [warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, pubsub, storage\u001b[22m"}}
 [info] ✔  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
-[debug] [2022-09-27T16:20:33.782Z] defaultcredentials: writing to file /Users/valerie/.config/firebase/siyu_lai.valerie_gmail.com_application_default_credentials.json
-[debug] [2022-09-27T16:20:33.783Z] Setting GAC to /Users/valerie/.config/firebase/siyu_lai.valerie_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/valerie/.config/firebase/siyu_lai.valerie_gmail.com_application_default_credentials.json"}}
-[debug] [2022-09-27T16:20:33.784Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/adminSdkConfig [none]
-[debug] [2022-09-27T16:20:34.232Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/adminSdkConfig 200
-[debug] [2022-09-27T16:20:34.232Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/adminSdkConfig {"projectId":"clone-7756a","databaseURL":"https://clone-7756a-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"clone-7756a.appspot.com"}
-[debug] [2022-09-27T16:20:34.258Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a [none]
-[debug] [2022-09-27T16:20:34.536Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a 200
-[debug] [2022-09-27T16:20:34.537Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a {"projectId":"clone-7756a","projectNumber":"215544905337","displayName":"amazon-clone","name":"projects/clone-7756a","resources":{"hostingSite":"clone-7756a","realtimeDatabaseInstance":"clone-7756a-default-rtdb"},"state":"ACTIVE","etag":"1_3ba7f1de-751b-4229-895b-945547fc0f32"}
-[debug] [2022-09-27T16:20:34.537Z] database rules config:  [{"instance":"clone-7756a-default-rtdb","rules":"/Users/valerie/Downloads/Developer/amazon-clone/database.rules.json"}]
-[debug] [2022-09-27T16:20:34.543Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2022-09-27T16:20:34.543Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-09-27T16:20:34.543Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
-[debug] [2022-09-27T16:20:34.543Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/Users/valerie/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/Users/valerie/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
+[debug] [2022-09-29T14:19:11.642Z] defaultcredentials: writing to file /Users/valerie/.config/firebase/siyu_lai.valerie_gmail.com_application_default_credentials.json
+[debug] [2022-09-29T14:19:11.643Z] Setting GAC to /Users/valerie/.config/firebase/siyu_lai.valerie_gmail.com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /Users/valerie/.config/firebase/siyu_lai.valerie_gmail.com_application_default_credentials.json"}}
+[debug] [2022-09-29T14:19:11.645Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/adminSdkConfig [none]
+[debug] [2022-09-29T14:19:12.247Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/adminSdkConfig 200
+[debug] [2022-09-29T14:19:12.247Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/adminSdkConfig {"projectId":"clone-7756a","databaseURL":"https://clone-7756a-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"clone-7756a.appspot.com"}
+[debug] [2022-09-29T14:19:12.272Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a [none]
+[debug] [2022-09-29T14:19:12.664Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a 200
+[debug] [2022-09-29T14:19:12.664Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a {"projectId":"clone-7756a","projectNumber":"215544905337","displayName":"amazon-clone","name":"projects/clone-7756a","resources":{"hostingSite":"clone-7756a","realtimeDatabaseInstance":"clone-7756a-default-rtdb"},"state":"ACTIVE","etag":"1_eb9a3357-3185-4b0c-b8f4-d7369baeb1e2"}
+[debug] [2022-09-29T14:19:12.665Z] database rules config:  [{"instance":"clone-7756a-default-rtdb","rules":"/Users/valerie/Downloads/Developer/amazon-clone/database.rules.json"}]
+[debug] [2022-09-29T14:19:12.670Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-09-29T14:19:12.670Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-09-29T14:19:12.670Z] Ignoring unsupported arg: rules {"metadata":{"emulator":{"name":"database"},"message":"Ignoring unsupported arg: rules"}}
+[debug] [2022-09-29T14:19:12.670Z] Starting Database Emulator with command {"binary":"java","args":["-Duser.language=en","-jar","/Users/valerie/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar","--host","localhost","--port",9000,"--functions_emulator_host","localhost","--functions_emulator_port",5001],"optionalArgs":["port","host","functions_emulator_port","functions_emulator_host"],"joinArgs":false} {"metadata":{"emulator":{"name":"database"},"message":"Starting Database Emulator with command {\"binary\":\"java\",\"args\":[\"-Duser.language=en\",\"-jar\",\"/Users/valerie/.cache/firebase/emulators/firebase-database-emulator-v4.7.3.jar\",\"--host\",\"localhost\",\"--port\",9000,\"--functions_emulator_host\",\"localhost\",\"--functions_emulator_port\",5001],\"optionalArgs\":[\"port\",\"host\",\"functions_emulator_port\",\"functions_emulator_host\"],\"joinArgs\":false}"}}
 [info] i  database: Database Emulator logging to database-debug.log {"metadata":{"emulator":{"name":"database"},"message":"Database Emulator logging to \u001b[1mdatabase-debug.log\u001b[22m"}}
-[debug] [2022-09-27T16:20:36.346Z] 17:20:36.344 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
- {"metadata":{"emulator":{"name":"database"},"message":"17:20:36.344 [NamespaceSystem-akka.actor.default-dispatcher-5] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
-[debug] [2022-09-27T16:20:36.522Z] 17:20:36.522 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
- {"metadata":{"emulator":{"name":"database"},"message":"17:20:36.522 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
-[debug] [2022-09-27T16:20:36.571Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-7756a/sites 
-[debug] [2022-09-27T16:20:37.643Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-7756a/sites 200
-[debug] [2022-09-27T16:20:37.643Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-7756a/sites {"sites":[{"name":"projects/clone-7756a/sites/clone-7756a","defaultUrl":"https://clone-7756a.web.app","appId":"1:215544905337:web:a873c3ee418ec8a8c4dea8","type":"DEFAULT_SITE"}]}
-[debug] [2022-09-27T16:20:37.644Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/webApps/1:215544905337:web:a873c3ee418ec8a8c4dea8/config [none]
-[debug] [2022-09-27T16:20:38.668Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/webApps/1:215544905337:web:a873c3ee418ec8a8c4dea8/config 200
-[debug] [2022-09-27T16:20:38.669Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/webApps/1:215544905337:web:a873c3ee418ec8a8c4dea8/config {"projectId":"clone-7756a","appId":"1:215544905337:web:a873c3ee418ec8a8c4dea8","databaseURL":"https://clone-7756a-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"clone-7756a.appspot.com","apiKey":"AIzaSyDqzAgHIezFa977YgF1zG61T9hNDl82Ryg","authDomain":"clone-7756a.firebaseapp.com","messagingSenderId":"215544905337","measurementId":"G-MH6YCXJ4TQ"}
+[debug] [2022-09-29T14:19:14.550Z] 15:19:14.548 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started
+ {"metadata":{"emulator":{"name":"database"},"message":"15:19:14.548 [NamespaceSystem-akka.actor.default-dispatcher-6] INFO akka.event.slf4j.Slf4jLogger - Slf4jLogger started\n"}}
+[debug] [2022-09-29T14:19:14.733Z] 15:19:14.732 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000
+ {"metadata":{"emulator":{"name":"database"},"message":"15:19:14.732 [main] INFO com.firebase.server.forge.App$ - Listening at localhost:9000\n"}}
+[debug] [2022-09-29T14:19:14.960Z] >>> [apiv2][query] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-7756a/sites 
+[debug] [2022-09-29T14:19:16.075Z] <<< [apiv2][status] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-7756a/sites 200
+[debug] [2022-09-29T14:19:16.075Z] <<< [apiv2][body] GET https://firebasehosting.googleapis.com/v1beta1/projects/clone-7756a/sites {"sites":[{"name":"projects/clone-7756a/sites/clone-7756a","defaultUrl":"https://clone-7756a.web.app","appId":"1:215544905337:web:a873c3ee418ec8a8c4dea8","type":"DEFAULT_SITE"}]}
+[debug] [2022-09-29T14:19:16.076Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/webApps/1:215544905337:web:a873c3ee418ec8a8c4dea8/config [none]
+[debug] [2022-09-29T14:19:17.071Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/webApps/1:215544905337:web:a873c3ee418ec8a8c4dea8/config 200
+[debug] [2022-09-29T14:19:17.071Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-7756a/webApps/1:215544905337:web:a873c3ee418ec8a8c4dea8/config {"projectId":"clone-7756a","appId":"1:215544905337:web:a873c3ee418ec8a8c4dea8","databaseURL":"https://clone-7756a-default-rtdb.europe-west1.firebasedatabase.app","storageBucket":"clone-7756a.appspot.com","apiKey":"AIzaSyDqzAgHIezFa977YgF1zG61T9hNDl82Ryg","authDomain":"clone-7756a.firebaseapp.com","messagingSenderId":"215544905337","measurementId":"G-MH6YCXJ4TQ"}
 [info] i  hosting: Serving hosting files from: build {"metadata":{"emulator":{"name":"hosting"},"message":"Serving hosting files from: \u001b[1mbuild\u001b[22m"}}
 [info] ✔  hosting: Local server: http://localhost:5005 {"metadata":{"emulator":{"name":"hosting"},"message":"Local server: \u001b[4m\u001b[1mhttp://localhost:5005\u001b[22m\u001b[24m"}}
-[info] i  ui: downloading ui-v1.7.0.zip... {"metadata":{"emulator":{"name":"ui"},"message":"downloading ui-v1.7.0.zip..."}}
-[debug] [2022-09-27T16:20:38.757Z] >>> [apiv2][query] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.7.0.zip 
-[debug] [2022-09-27T16:20:39.378Z] <<< [apiv2][status] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.7.0.zip 200
-[debug] [2022-09-27T16:20:39.378Z] <<< [apiv2][body] GET https://storage.googleapis.com/firebase-preview-drop/emulator/ui-v1.7.0.zip [stream]
-[debug] [2022-09-27T16:20:40.141Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-09-27T16:20:40.141Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2022-09-27T16:20:40.141Z] Starting Emulator UI with command {"binary":"node","args":["/Users/valerie/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/valerie/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[warn] ⚠  ui: Emulator UI unable to start on port 4000, starting on 4001 instead. {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI unable to start on port 4000, starting on 4001 instead."}}
+[debug] [2022-09-29T14:19:17.430Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-09-29T14:19:17.430Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-09-29T14:19:17.431Z] Starting Emulator UI with command {"binary":"node","args":["/Users/valerie/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/Users/valerie/.cache/firebase/emulators/ui-v1.7.0/server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2022-09-27T16:20:40.230Z] Web / API server started at localhost:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[debug] [2022-09-29T14:19:17.504Z] Web / API server started at localhost:4001
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4001\n"}}
 [info] i  functions: Watching "/Users/valerie/Downloads/Developer/amazon-clone/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/Users/valerie/Downloads/Developer/amazon-clone/functions\" for Cloud Functions..."}}
-[debug] [2022-09-27T16:20:40.405Z] Validating nodejs source
-[debug] [2022-09-27T16:20:41.091Z] > [functions] package.json contents: {
+[debug] [2022-09-29T14:19:17.694Z] Validating nodejs source
+[debug] [2022-09-29T14:19:18.376Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -86,16 +84,16 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.341-b10, mixed mode)
   },
   "private": true
 }
-[debug] [2022-09-27T16:20:41.091Z] Building nodejs source
-[debug] [2022-09-27T16:20:41.091Z] Analyzing nodejs backend spec
-[debug] [2022-09-27T16:20:41.092Z] Could not find functions.yaml. Must use http discovery
-[debug] [2022-09-27T16:20:41.199Z] Serving at port 9005
+[debug] [2022-09-29T14:19:18.376Z] Building nodejs source
+[debug] [2022-09-29T14:19:18.376Z] Analyzing nodejs backend spec
+[debug] [2022-09-29T14:19:18.378Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-09-29T14:19:18.481Z] Serving at port 9005
 
-[debug] [2022-09-27T16:20:41.259Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2022-09-27T16:20:41.264Z] shutdown requested via /__/quitquitquit
+[debug] [2022-09-29T14:19:18.535Z] Got response from /__/functions.yaml {"endpoints":{"api":{"platform":"gcfv1","httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-09-29T14:19:18.539Z] shutdown requested via /__/quitquitquit
 
 [info] ✔  functions[us-central1-api]: http function initialized (http://localhost:5001/clone-7756a/us-central1/api). {"metadata":{"emulator":{"name":"functions"},"message":"\u001b[1mhttp\u001b[22m function initialized (http://localhost:5001/clone-7756a/us-central1/api)."}}
-[debug] [2022-09-27T16:20:41.270Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=clone-7756a-default-rtdb  
+[debug] [2022-09-29T14:19:18.543Z] >>> HTTP REQUEST PUT http://localhost:9000/.settings/rules.json?ns=clone-7756a-default-rtdb  
  {
   /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
   "rules": {
@@ -103,19 +101,19 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.341-b10, mixed mode)
     ".write": false
   }
 }
-[debug] [2022-09-27T16:20:42.071Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"clone-7756a-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"f095218c-8d72-4e65-8253-6e40d3fb1ca8"}
+[debug] [2022-09-29T14:19:19.242Z] <<< HTTP RESPONSE 200 {"content-length":"15","content-type":"application/json; charset=utf-8","access-control-allow-origin":"*","cache-control":"no-cache","x-firebase-project-id":"clone-7756a-default-rtdb","x-firebase-project-number":"123456789","x-firebase-uuid":"50879c9c-d81e-4f24-92b3-5ddeb32ee5c8"}
 [info] 
 ┌─────────────────────────────────────────────────────────────┐
 │ ✔  All emulators ready! It is now safe to connect your app. │
-│ i  View Emulator UI at http://localhost:4000                │
+│ i  View Emulator UI at http://localhost:4001                │
 └─────────────────────────────────────────────────────────────┘
 
 ┌───────────┬────────────────┬─────────────────────────────────┐
 │ Emulator  │ Host:Port      │ View in Emulator UI             │
 ├───────────┼────────────────┼─────────────────────────────────┤
-│ Functions │ localhost:5001 │ http://localhost:4000/functions │
+│ Functions │ localhost:5001 │ http://localhost:4001/functions │
 ├───────────┼────────────────┼─────────────────────────────────┤
-│ Database  │ localhost:9000 │ http://localhost:4000/database  │
+│ Database  │ localhost:9000 │ http://localhost:4001/database  │
 ├───────────┼────────────────┼─────────────────────────────────┤
 │ Hosting   │ localhost:5005 │ n/a                             │
 └───────────┴────────────────┴─────────────────────────────────┘
@@ -125,3 +123,67 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.341-b10, mixed mode)
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
 [warn] ⚠  emulators: Support for Java version <= 10 will be dropped soon in firebase-tools@11. Please upgrade to Java version 11 or above to continue using the emulators. 
+[debug] [2022-09-29T14:19:41.173Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2022-09-29T14:19:41.180Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2022-09-29T14:19:41.181Z] Accepted request POST /clone-7756a/us-central1/api/payments/create?total=11397 --> us-central1-api
+[debug] [2022-09-29T14:19:41.225Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-09-29T14:19:41.226Z] [worker-pool] Adding worker with key us-central1-api, total=1 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=1"}}
+[debug] [2022-09-29T14:19:41.226Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-09-29T14:19:41.226Z] [worker-us-central1-api-239d5311-71b1-4b52-9baa-e0c77e7fe4dc]: Assigning socketPath: /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/fire_emu_6518.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-239d5311-71b1-4b52-9baa-e0c77e7fe4dc]: Assigning socketPath: /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/fire_emu_6518.sock"}}
+[debug] [2022-09-29T14:19:41.227Z] [worker-us-central1-api-239d5311-71b1-4b52-9baa-e0c77e7fe4dc]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-239d5311-71b1-4b52-9baa-e0c77e7fe4dc]: BUSY"}}
+[debug] [2022-09-29T14:19:41.234Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2022-09-29T14:19:41.234Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2022-09-29T14:19:41.234Z] Accepted request POST /clone-7756a/us-central1/api/payments/create?total=11397 --> us-central1-api
+[debug] [2022-09-29T14:19:41.248Z] [worker-pool] addWorker(us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] addWorker(us-central1-api)"}}
+[debug] [2022-09-29T14:19:41.250Z] [worker-pool] Adding worker with key us-central1-api, total=2 {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] Adding worker with key us-central1-api, total=2"}}
+[debug] [2022-09-29T14:19:41.250Z] [worker-pool] submitWork(triggerId=us-central1-api) {"metadata":{"emulator":{"name":"functions"},"message":"[worker-pool] submitWork(triggerId=us-central1-api)"}}
+[debug] [2022-09-29T14:19:41.250Z] [worker-us-central1-api-351fcec5-0a28-4e6a-bcf4-934d35472684]: Assigning socketPath: /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/fire_emu_6519.sock {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-351fcec5-0a28-4e6a-bcf4-934d35472684]: Assigning socketPath: /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/fire_emu_6519.sock"}}
+[debug] [2022-09-29T14:19:41.250Z] [worker-us-central1-api-351fcec5-0a28-4e6a-bcf4-934d35472684]: BUSY {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-351fcec5-0a28-4e6a-bcf4-934d35472684]: BUSY"}}
+[debug] [2022-09-29T14:19:42.069Z] [runtime-status] [6518] Functions runtime initialized. {"cwd":"/Users/valerie/Downloads/Developer/amazon-clone/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Functions runtime initialized. {\"cwd\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-09-29T14:19:42.070Z] [runtime-status] [6519] Functions runtime initialized. {"cwd":"/Users/valerie/Downloads/Developer/amazon-clone/functions","node_version":"16.16.0"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Functions runtime initialized. {\"cwd\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions\",\"node_version\":\"16.16.0\"}"}}
+[debug] [2022-09-29T14:19:42.071Z] [runtime-status] [6518] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Disabled runtime features: undefined"}}
+[debug] [2022-09-29T14:19:42.072Z] [runtime-status] [6519] Disabled runtime features: undefined {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Disabled runtime features: undefined"}}
+[debug] [2022-09-29T14:19:42.073Z] [runtime-status] [6518] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.073Z] [runtime-status] [6519] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.073Z] [runtime-status] [6519] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.073Z] [runtime-status] [6518] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.074Z] [runtime-status] [6519] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-09-29T14:19:42.074Z] [runtime-status] [6518] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Outgoing network have been stubbed. [{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"http\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"https\",\"status\":\"mocked\"},{\"name\":\"net\",\"status\":\"mocked\"}]"}}
+[debug] [2022-09-29T14:19:42.074Z] [runtime-status] [6518] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.074Z] [runtime-status] [6519] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.104Z] [runtime-status] [6519] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-09-29T14:19:42.104Z] [runtime-status] [6519] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-09-29T14:19:42.104Z] [runtime-status] [6519] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.104Z] [runtime-status] [6518] Checked functions.config() {"config":{}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Checked functions.config() {\"config\":{}}"}}
+[debug] [2022-09-29T14:19:42.104Z] [runtime-status] [6518] firebase-functions has been stubbed. {"functionsResolution":{"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] firebase-functions has been stubbed. {\"functionsResolution\":{\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}}"}}
+[debug] [2022-09-29T14:19:42.104Z] [runtime-status] [6519] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.105Z] [runtime-status] [6518] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.105Z] [runtime-status] [6518] Resolved module firebase-admin {"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Resolved module firebase-admin {\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.105Z] [runtime-status] [6519] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.105Z] [runtime-status] [6519] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-09-29T14:19:42.105Z] [runtime-status] [6518] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.24.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js"} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Resolved module firebase-functions {\"declared\":true,\"installed\":true,\"version\":\"3.24.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-functions/lib/index.js\"}"}}
+[debug] [2022-09-29T14:19:42.105Z] [runtime-status] [6518] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"10.3.0","resolution":"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js"}} {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] firebase-admin has been stubbed. {\"adminResolution\":{\"declared\":true,\"installed\":true,\"version\":\"10.3.0\",\"resolution\":\"/Users/valerie/Downloads/Developer/amazon-clone/functions/node_modules/firebase-admin/lib/index.js\"}}"}}
+[debug] [2022-09-29T14:19:42.292Z] [runtime-status] [6518] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-09-29T14:19:42.297Z] [runtime-status] [6518] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Running api in signature http"}}
+[debug] [2022-09-29T14:19:42.297Z] [runtime-status] [6518] Attempting to listen to socketPath: /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/fire_emu_6518.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Attempting to listen to socketPath: /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/fire_emu_6518.sock"}}
+[debug] [2022-09-29T14:19:42.298Z] [runtime-status] [6519] Beginning invocation function api! {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Beginning invocation function api!"}}
+[info] i  functions: Beginning execution of "api" {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Beginning execution of \"api\""}}
+[debug] [2022-09-29T14:19:42.298Z] [runtime-status] [6519] Running api in signature http {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Running api in signature http"}}
+[debug] [2022-09-29T14:19:42.320Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-09-29T14:19:42.328Z] [functions] Got req.url=/clone-7756a/us-central1/api/payments/create?total=11397, mapping to path=/payments/create?total=11397 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-7756a/us-central1/api/payments/create?total=11397, mapping to path=/payments/create?total=11397"}}
+[debug] [2022-09-29T14:19:42.330Z] [runtime-status] [6519] Attempting to listen to socketPath: /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/fire_emu_6519.sock {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Attempting to listen to socketPath: /var/folders/vd/5d6lw5zx1gq08fxdwbb7hdhm0000gn/T/fire_emu_6519.sock"}}
+[debug] [2022-09-29T14:19:42.340Z] [functions] Runtime ready! Sending request! {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Runtime ready! Sending request!"}}
+[debug] [2022-09-29T14:19:42.340Z] [functions] Got req.url=/clone-7756a/us-central1/api/payments/create?total=11397, mapping to path=/payments/create?total=11397 {"metadata":{"emulator":{"name":"functions"},"message":"[functions] Got req.url=/clone-7756a/us-central1/api/payments/create?total=11397, mapping to path=/payments/create?total=11397"}}
+[debug] [2022-09-29T14:19:42.389Z] [runtime-status] [6518] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Ephemeral server handling POST request"}}
+[debug] [2022-09-29T14:19:42.396Z] [runtime-status] [6519] Ephemeral server handling POST request {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Ephemeral server handling POST request"}}
+[info] >  Payment Request Received BOOM!! for this amount >>> 11397 {"user":"Payment Request Received BOOM!! for this amount >>> 11397","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Received BOOM!! for this amount >>> 11397"}}
+[info] >  Payment Request Received BOOM!! for this amount >>> 11397 {"user":"Payment Request Received BOOM!! for this amount >>> 11397","metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"\u001b[90m> \u001b[39m Payment Request Received BOOM!! for this amount >>> 11397"}}
+[debug] [2022-09-29T14:19:42.430Z] [runtime-status] [6518] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6518] Ephemeral server survived."}}
+[debug] [2022-09-29T14:19:42.431Z] [runtime-status] [6519] Ephemeral server survived. {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"[runtime-status] [6519] Ephemeral server survived."}}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-09-29T14:19:42.981Z] [worker-us-central1-api-239d5311-71b1-4b52-9baa-e0c77e7fe4dc]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-239d5311-71b1-4b52-9baa-e0c77e7fe4dc]: IDLE"}}
+[debug] [2022-09-29T14:19:42.982Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] i  functions: Finished "api" in ~1s {"metadata":{"emulator":{"name":"functions"},"function":{"name":"us-central1-api"},"extension":{},"message":"Finished \"api\" in ~1s"}}
+[debug] [2022-09-29T14:19:42.983Z] [worker-us-central1-api-351fcec5-0a28-4e6a-bcf4-934d35472684]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-us-central1-api-351fcec5-0a28-4e6a-bcf4-934d35472684]: IDLE"}}
+[debug] [2022-09-29T14:19:42.984Z] [work-queue] {"queueLength":0,"workRunningCount":0}

@@ -8,7 +8,6 @@ import { getBasketTotal } from './reducer'
 import { Link , useHistory} from 'react-router-dom';
 import { useStateValue } from "./StateProvider";
 import { useStripe, useElements, CardElement } from '@stripe/react-stripe-js';
-import { async } from '@firebase/util';
 
 import axios from './axios';
 
@@ -44,6 +43,8 @@ function Payment() {
 
     }, [basket]);
 
+    console.log('THE SECRET IS >>>', clientSecret);
+
     const handleSubmit = async ev => {
         ev.preventDefault();
         setProcessing(true);
@@ -57,6 +58,10 @@ function Payment() {
             setError(null);
             setProcessing(false);
             setSucceeded(true);
+
+            dispatch({
+                type: 'EMPTY_BASKET'
+            })
 
             history.replace('/orders')
         });

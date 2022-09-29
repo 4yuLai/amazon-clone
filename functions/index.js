@@ -13,7 +13,28 @@ app.use(cors({origin: true}));
 app.use(express.json());
 
 // - API routes
-app.get('/', (request, response) => res.status(200).send('hellow world'))
+app.get('/', (request, response) => response.status(200).send('hello world'))
+
+app.post('/payments/create', async (request, response) => {
+    const total = Math.round(request.query.total);
+    
+    console.log('Payment Request Received BOOM!! for this amount >>>', total);
+
+    // Create a PaymentIntent with the order amount and currency
+    const paymentIntent = await stripe.paymentIntents.create({
+        amount: total,
+        currency: "eur"
+    });
+
+    // OK - created
+    response.status(201).send({
+        clientSecret: paymentIntent.client_secret,
+    });
+})
 
 // - Listen command
 exports.api = functions.https.onRequest(app);
+
+// Example endpoint
+// http://localhost:5001/clone-7756a/us-central1/api
+
