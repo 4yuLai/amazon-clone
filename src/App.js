@@ -10,9 +10,22 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { getAuth, onAuthStateChanged } from "firebase/auth";
 import { useStateValue } from "./StateProvider";
 
+import {Elements} from '@stripe/react-stripe-js';
+import {loadStripe} from '@stripe/stripe-js';
+
+// Make sure to call `loadStripe` outside of a component’s render to avoid
+// recreating the `Stripe` object on every render.
+const stripePromise = loadStripe('pk_test_51LmdxIKpyoSfhizsvYDRtwlXhvl4E8ajhBWjr5k0y2iTOz50QNlXGeiusxP5Ti2slq2CHva9kGPNw7L72myWDOEH00hfDBpV0x');
 
 function App() {
   const [{}, dispatch] = useStateValue();
+
+  // const options = {
+  //   // passing the client secret obtained from the server
+  //   clientSecret: '{{CLIENT_SECRET}}',
+  // };
+
+  // options = {options}
 
   useEffect(()=> {
     //will only run once when the app component loads
@@ -50,7 +63,9 @@ function App() {
           </Route>
           <Route path="/payment">
             <Header />
-            <Payment />
+            <Elements stripe={stripePromise}>
+              <Payment />
+            </Elements>
           </Route>
           <Route path="/">
             <Header />
